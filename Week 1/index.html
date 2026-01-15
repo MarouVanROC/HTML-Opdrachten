@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn eerste JavaScript</title>
+</head>
+<body>
+    <h1>Welkom bij JavaScript!</h1>
+    <button onclick="toonBericht()">Klik op mij!</button>
+    <button onclick="toonAnderBericht()">Knop 2</button>
+    <button onclick="vraagLeeftijd()">Wat is je leeftijd?</button>
+    
+    <script>
+        function toonBericht() {
+            alert("Ik haat javascript!");
+        }
+        function toonAnderBericht() {
+            alert("Hallo");
+        }
+        function vraagLeeftijd() {
+            var naam = prompt("Wat is je naam?");
+            var leeftijd = prompt("Hoe oud ben je?");
+            if (naam && leeftijd) {
+                alert("Hallo, " + naam + "! Je bent " + leeftijd + " jaar oud.");
+            } else if (leeftijd) {
+                alert("Je bent " + leeftijd + " jaar oud.");
+            }
+        }
+            function vraagFavorietDier() {
+                var dier = prompt("Wat is je favoriete dier?");
+                if (dier && dier.toLowerCase() === "kat") {
+                    alert("Dat is ook mijn favoriet!");
+                } else if (dier) {
+                    alert("Ait! Ik hou meer van Katten.");
+                }
+            }
+            window.onload = function() {
+                vraagFavorietDier();
+            }
+    </script>
+</body>
+</html>
