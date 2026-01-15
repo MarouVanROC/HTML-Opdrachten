@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title>Opdracht A - Basis berekeningen</title>
 </head>
 <body>
+    <div id="opdracht1"></div>
+    <div id="opdracht2"></div>
+    <div id="opdracht3"></div>
     
+    <script>
+        let a = 5;
+        let b = 10;
+        let c = 15;
+        let getal = 10;
+        let x = 5;
+        
+        let gemiddelde = (a + b + c) / 3;
+        document.getElementById('opdracht1').textContent = gemiddelde;
+
+        let deelbaarDoorTwee = getal % 2 === 0;
+        document.getElementById('opdracht2').textContent = deelbaarDoorTwee;
+
+        let resultaat = x * 5 - 3;
+        document.getElementById('opdracht3').textContent = resultaat;
+    </script>
 </body>
 </html>

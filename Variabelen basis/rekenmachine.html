@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rekenmachine</title>
+    <style>
+        body {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Rekenmachine</h1>
+        <div id="getal1">Getal 1: <span id="num1">5</span></div>
+        <div id="getal2">Getal 2: <span id="num2">3</span></div>
+        <hr>
+        <div id="optellen">Optellen: <span id="plus"></span></div>
+        <div id="aftrekken">Aftrekken: <span id="min"></span></div>
+        <div id="vermenigvuldigen">Vermenigvuldigen: <span id="keer"></span></div>
+        <div id="delen">Delen: <span id="gedeeld"></span></div>
+        <div id="modulus">Rest bij deling: <span id="rest"></span></div>
+    </div>
+    <script>
+        let getal1 = 5;
+        let getal2 = 3;
+        document.getElementById('num1').innerHTML = getal1;
+        document.getElementById('num2').innerHTML = getal2;
+        document.getElementById('plus').innerHTML = getal1 + getal2;
+        document.getElementById('min').innerHTML = getal1 - getal2;
+        document.getElementById('keer').innerHTML = getal1 * getal2;
+        document.getElementById('gedeeld').innerHTML = (getal1 / getal2).toFixed(2);
+        document.getElementById('rest').innerHTML = getal1 % getal2;
+    </script>
+</body>
+</html>
