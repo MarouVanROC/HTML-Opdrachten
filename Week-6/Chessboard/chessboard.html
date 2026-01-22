@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schaakbord met CSS Grid</title>
+    <link rel="stylesheet" href="chessboard.css">
+</head>
+<body>
+    <div class="chessboard-container">
+        <div class="chessboard-labels top-labels">
+            <span></span>
+            <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span>
+        </div>
+        <div class="chessboard-rows">
+            <div class="chessboard-row"><span class="row-label">8</span><div class="board-row"></div></div>
+            <div class="chessboard-row"><span class="row-label">7</span><div class="board-row"></div></div>
+            <div class="chessboard-row"><span class="row-label">6</span><div class="board-row"></div></div>
+            <div class="chessboard-row"><span class="row-label">5</span><div class="board-row"></div></div>
+            <div class="chessboard-row"><span class="row-label">4</span><div class="board-row"></div></div>
+            <div class="chessboard-row"><span class="row-label">3</span><div class="board-row"></div></div>
+            <div class="chessboard-row"><span class="row-label">2</span><div class="board-row"></div></div>
+            <div class="chessboard-row"><span class="row-label">1</span><div class="board-row"></div></div>
+        </div>
+    </div>
+</body>
+<script>
+const rows = document.querySelectorAll('.board-row');
+rows.forEach((row, i) => {
+    for(let j=0; j<8; j++) {
+        const square = document.createElement('span');
+        square.className = 'square';
+        if ((i + j) % 2 === 1) {
+            square.classList.add('black');
+        }
+        row.appendChild(square);
+    }
+});
+</script>
+</html>
