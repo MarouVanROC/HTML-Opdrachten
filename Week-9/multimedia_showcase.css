@@ -1,93 +1,19 @@
-@font-face {
-  font-family: 'Abril-Fatface';
-  src: url('FONTS/abril-fatface/AbrilFatface-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Abhaya Libre';
-  src: url('FONTS/abhayalibre/AbhayaLibre-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Acknowledgement';
-  src: url('FONTS/acknowledgement/Acknowledgement.ttf') format('truetype');
-}
-
-section > div:nth-child(1) h1,
-section > div:nth-child(1) p {
-  font-family: 'Abril-Fatface', serif;
-}
-section > div:nth-child(2) h1,
-section > div:nth-child(2) p {
-  font-family: 'Abhaya Libre', serif;
-}
-section > div:nth-child(3) h1,
-section > div:nth-child(3) p {
-  font-family: 'Acknowledgement', serif;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap');
-
-body {
-  font-family: 'Raleway', Arial, sans-serif;
-  font-size: 1.5em;
-}
-
-h1 {
-  font-family: 'Lora', serif;
-  font-size: 2em;
-  text-decoration: underline;
-}
-
-p span {
-  font-size: 2em;
-  letter-spacing: 3px;
-  float: left;
-  line-height: 1;
-  font-weight: bold;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  font-size: 1em;
-  text-transform: capitalize;
-}
-
 header {
   background: #222;
   color: #fff;
   padding: 1em 0;
   text-align: center;
+  letter-spacing: 2px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
 main {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 2em auto;
   padding: 1em;
   background: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-}
-
-.videos, .audios {
-  margin-bottom: 2em;
-}
-
-.videos h2, .audios h2, .beschrijving h2 {
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
-  color: #333;
-  text-decoration: none;
-}
-
-.videos video, .audios audio {
-  display: block;
-  margin: 1em 0;
-  max-width: 100%;
-  border-radius: 6px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
 }
 
 .media-category {
@@ -173,14 +99,14 @@ footer {
 }
 
 @media (max-width: 700px) {
-  main {
+    main {
     padding: 0.5em;
   }
   .media-grid, .beschrijving {
     grid-template-columns: 1fr;
     gap: 1em;
   }
-  .media-item video, .media-item audio {
-    max-width: 100%;
+    .media-item video, .media-item audio {
+      max-width: 100%;
+    }
   }
-}
