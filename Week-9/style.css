@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Abril-Fatface';
+  src: url('FONTS/abril-fatface/AbrilFatface-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Abhaya Libre';
+  src: url('FONTS/abhayalibre/AbhayaLibre-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Acknowledgement';
+  src: url('FONTS/acknowledgement/Acknowledgement.ttf') format('truetype');
+}
+
+section > div:nth-child(1) h1,
+section > div:nth-child(1) p {
+  font-family: 'Abril-Fatface', serif;
+}
+section > div:nth-child(2) h1,
+section > div:nth-child(2) p {
+  font-family: 'Abhaya Libre', serif;
+}
+section > div:nth-child(3) h1,
+section > div:nth-child(3) p {
+  font-family: 'Acknowledgement', serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+body {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+p span {
+  font-size: 2em;
+  letter-spacing: 3px;
+  float: left;
+  line-height: 1;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1em;
+  text-transform: capitalize;
+}
